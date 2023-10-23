@@ -1,6 +1,9 @@
 .email-signature-container {
   font-family: "Kanit", sans-serif;
-    width: 1024px;
+  width: 1024px;
+  background-color: #ffffff;
+  /* bottom shadow */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .email-signature-body {
@@ -15,7 +18,6 @@
   height: 170px;
 }
 
-
 /* editable user information */
 .user-name {
   color: #000;
@@ -26,69 +28,144 @@
 .user-designation {
   color: #000;
   font-size: 24px;
-  color: #F7A94F;
+  color: #f7a94f;
   margin-bottom: 14px;
 }
 
-.phone-number-icon, .email-icon {
-    width: 20px;
-    height: 20px;
-    background-color: aliceblue;
-    margin-right: 14px;
+.phone-number-icon,
+.email-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+}
+
+.phone-number-icon > img,
+.email-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.phone-number-link,
+.email-link {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 /* brand slogan, name and logo */
 .brand-info {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .brand-slogan {
-    color: #A55A35;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 0.9;
+  color: #a55a35;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 0.9;
 }
 .brand-name {
-    color: #2B1812;
-    font-size: 54px;
-    font-weight: 600;
-    line-height: 0.9;
-
+  color: #2b1812;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 0.9;
 }
 
 .brand-logo-container {
-    width: 130px;
-    height: 130px;
-    background-color: aliceblue;
-}
-
-
-/* footer */
-.email-signature-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.brand-contact {
-    display: flex;
-    gap: 30px;
-    background-color: #050251;
-    color: #ffffff;
-    font-size: 10px;
-    flex: 0.9;
-    justify-content: space-between;
-    padding: 24px;
-    padding-left: 70px;
-}
-
-.footer-brand-logo-container {
-    width: 200px;
-    padding-right: 70px;
+  width: 130px;
+  height: 130px;
 }
 
 .brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* footer */
+.email-signature-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-contact {
+  display: flex;
+  gap: 30px;
+  background-color: #050251;
+  color: #ffffff;
+  font-size: 10px;
+  flex: 0.9;
+  justify-content: space-between;
+  padding: 24px;
+  padding-left: 70px;
+}
+
+.footer-brand-logo-container {
+  width: 200px;
+  padding-right: 70px;
+}
+
+.footer-brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* on smaller screen break the layout and hide the devider */
+@media only screen and (max-width: 768px) {
+  .email-signature-container {
+    width: 100% !important;
+  }
+
+  .email-signature-body {
+    flex-direction: column;
+    padding: 50px 30px 30px 30px;
+  }
+
+  .devider {
+    display: none;
+  }
+
+  .brand-info {
+    margin-top: 30px;
+  }
+
+  .brand-slogan {
+    font-size: 24px;
+  }
+
+  .brand-name {
+    font-size: 32px;
+  }
+
+  .brand-logo-container {
+    width: 70px;
+    height: 70px;
+  }
+
+  .brand-logo {
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+
+  .email-signature-footer {
+    flex-direction: column;
+  }
+
+  .brand-contact {
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    padding-left: 30px;
+  }
+
+  .footer-brand-logo-container {
+    width: 100px;
+    padding-right: 0px;
+  }
+
+  .footer-brand-logo {
+    display: none;
+  }
 }
