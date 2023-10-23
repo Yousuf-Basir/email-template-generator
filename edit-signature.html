@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/styles/edit-signature.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Invicta Email Signature</title>
+</head>
+
+<body class="dotted-background">
+    <div class="center">
+        <div class="form-container">
+            <div class="logo-container">
+                Edit Signature
+            </div>
+    
+            <div class="form">
+                <!-- name -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required="">
+                </div>
+
+                <!-- designation -->
+                <div class="form-group">
+                    <label for="designation">Designation</label>
+                    <input type="text" id="designation" placeholder="Enter your designation" required="">
+                </div>
+
+                <!-- phone -->
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone-number" placeholder="Enter your phone number" required="">
+                </div>
+
+                <!-- email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required="">
+                </div>
+    
+                <button id="submit-button" class="form-submit-btn">Done</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="/common.js"></script>
+    <script type="module" src="/scripts/edit-signature.js"></script>
+</body>
+</html>

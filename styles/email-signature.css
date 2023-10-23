@@ -1,6 +1,6 @@
 .email-signature-container {
   font-family: "Kanit", sans-serif;
-  width: 1024px;
+  width: 600px; /* Updated width to 600px */
   background-color: #ffffff;
   /* bottom shadow */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -9,34 +9,33 @@
 .email-signature-body {
   display: flex;
   justify-content: space-between;
-  padding: 100px 70px 30px 70px;
+  padding: 50px 30px 30px 30px; /* Adjusted padding */
 }
 
 .devider {
   background: #2b1812;
   width: 2px;
-  height: 170px;
+  height: 120px; /* Adjusted height */
 }
 
 /* editable user information */
 .user-name {
   color: #000;
-  font-size: 38px;
+  font-size: 28px; /* Adjusted font size */
   line-height: 1;
 }
 
 .user-designation {
-  color: #000;
-  font-size: 24px;
   color: #f7a94f;
-  margin-bottom: 14px;
+  font-size: 20px; /* Adjusted font size */
+  margin-bottom: 10px; /* Adjusted margin */
 }
 
 .phone-number-icon,
 .email-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 14px;
+  width: 16px; /* Adjusted width */
+  height: 16px; /* Adjusted height */
+  margin-right: 10px; /* Adjusted margin */
 }
 
 .phone-number-icon > img,
@@ -45,35 +44,37 @@
   height: 100%;
   object-fit: contain;
 }
+
 .phone-number-link,
 .email-link {
   color: #000;
-  font-size: 18px;
+  font-size: 16px; /* Adjusted font size */
   text-decoration: none;
 }
 
-/* brand slogan, name and logo */
+/* brand slogan, name, and logo */
 .brand-info {
   display: flex;
-  gap: 30px;
+  gap: 20px; /* Adjusted gap */
 }
 
 .brand-slogan {
   color: #a55a35;
-  font-size: 32px;
+  font-size: 24px; /* Adjusted font size */
   font-weight: 600;
   line-height: 0.9;
 }
+
 .brand-name {
   color: #2b1812;
-  font-size: 54px;
+  font-size: 40px; /* Adjusted font size */
   font-weight: 600;
   line-height: 0.9;
 }
 
 .brand-logo-container {
-  width: 130px;
-  height: 130px;
+  width: 100px; /* Adjusted width */
+  height: 100px; /* Adjusted height */
 }
 
 .brand-logo {
@@ -90,19 +91,19 @@
 
 .brand-contact {
   display: flex;
-  gap: 30px;
+  gap: 20px; /* Adjusted gap */
   background-color: #050251;
   color: #ffffff;
   font-size: 10px;
   flex: 0.9;
   justify-content: space-between;
-  padding: 24px;
-  padding-left: 70px;
+  padding: 20px; /* Adjusted padding */
+  padding-left: 30px; /* Adjusted padding */
 }
 
 .footer-brand-logo-container {
-  width: 200px;
-  padding-right: 70px;
+  width: 160px; /* Adjusted width */
+  padding-right: 30px; /* Adjusted padding */
 }
 
 .footer-brand-logo {
@@ -119,7 +120,7 @@
 
   .email-signature-body {
     flex-direction: column;
-    padding: 50px 30px 30px 30px;
+    padding: 30px; /* Adjusted padding */
   }
 
   .devider {
@@ -127,20 +128,20 @@
   }
 
   .brand-info {
-    margin-top: 30px;
+    margin-top: 20px; /* Adjusted margin */
   }
 
   .brand-slogan {
-    font-size: 24px;
+    font-size: 18px; /* Adjusted font size */
   }
 
   .brand-name {
-    font-size: 32px;
+    font-size: 28px; /* Adjusted font size */
   }
 
   .brand-logo-container {
-    width: 70px;
-    height: 70px;
+    width: 80px; /* Adjusted width */
+    height: 80px; /* Adjusted height */
   }
 
   .brand-logo {
@@ -156,13 +157,13 @@
   .brand-contact {
     flex-direction: column;
     gap: 10px;
-    padding: 24px;
-    padding-left: 30px;
+    padding: 20px; /* Adjusted padding */
+    padding-left: 20px; /* Adjusted padding */
   }
 
   .footer-brand-logo-container {
-    width: 100px;
-    padding-right: 0px;
+    width: 80px; /* Adjusted width */
+    padding-right: 0;
   }
 
   .footer-brand-logo {

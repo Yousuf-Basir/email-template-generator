@@ -31,6 +31,7 @@ body {
 .top-button-group {
     padding: 20px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -60,4 +61,11 @@ body {
 
 .button-blue {
     background-color: #1778f2;
+}
+
+/* on small screen */
+@media (max-width: 600px) {
+  .button {
+    min-width: 60px;
+  }
 }

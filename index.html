@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="/index.css" />
-  <link rel="stylesheet" href="/styles/email-signature-styles.css" />
+  <link rel="stylesheet" href="/styles/email-signature.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
   <div class="group center gap-sm top-button-group">
     <button id="edit-button" class="button button-black">Edit text</button>
     <button id="copy-button" class="button button-black">Copy</button>
-    <button class="button button-blue">Download html</button>
+    <button id="download-button" class="button button-blue">Download html</button>
   </div>
   <div id="app">
     <!-- center div -->
@@ -53,7 +53,7 @@
               <div class="email">
                 <!-- link for email -->
                 <a id="user-email" class="email-link" href="mailto:ayshahossain@gmail.com">
-                  ayshahossain@gmail.com
+                  your@email.com
                 </a>
               </div>
             </div>
@@ -106,6 +106,7 @@
       </div>
     </div>
   </div>
+  <script type="module" src="/common.js"></script>
   <script type="module" src="/main.js"></script>
 </body>
 
