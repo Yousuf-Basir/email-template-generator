@@ -1,4 +1,13 @@
-import { getUserDataFromUrl, replaceImageSrc } from "./common";
+export const getUserDataFromUrl = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const userData = {
+        name: urlParams.get('name'),
+        designation: urlParams.get('designation'),
+        phoneNumber: urlParams.get('phoneNumber'),
+        email: urlParams.get('email')
+    }
+    return userData;
+}
 
 const copyButton = document.getElementById('copy-button');
 const emailSignature = document.getElementById('email-signature');
@@ -102,6 +111,6 @@ copyButton.addEventListener('click', () => {
 });
 
 // handle download button click
-downloadButton.addEventListener('click', () => {
-    downloadHtml(emailSignature.innerHTML);
-});
+// downloadButton.addEventListener('click', () => {
+//     downloadHtml(emailSignature.innerHTML);
+// });

@@ -1,4 +1,13 @@
-import { getUserDataFromUrl } from "../common";
+const getUserDataFromUrl = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const userData = {
+        name: urlParams.get('name'),
+        designation: urlParams.get('designation'),
+        phoneNumber: urlParams.get('phoneNumber'),
+        email: urlParams.get('email')
+    }
+    return userData;
+}
 
 // form inputs
 const nameInput = document.getElementById('name');
